@@ -1,5 +1,6 @@
 pipeline{
-  agent any
+  agent {
+  node { label 'workstation' } }
 
    stages {
 
@@ -7,6 +8,7 @@ pipeline{
      stage('one') {
        steps {
          sh 'echo one'
+         mail bcc: '', body: 'hello', cc: '', from: '', replyTo: '', subject: 'hello', to: 'pradeep@gmail.com'
        }
      }
 
@@ -15,6 +17,12 @@ pipeline{
            steps {
              sh 'echo two'
            }
+     }
+
+     post {
+       always {
+           echo 'sending mail'
+       }    mail bcc: '', body: 'hello', cc: '', from: '', replyTo: '', subject: 'hello', to: 'pradeep@gmail.com'
      }
    }
 }
