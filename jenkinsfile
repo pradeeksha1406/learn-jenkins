@@ -4,15 +4,15 @@ pipeline{
    stages {
 
 
-     stage( 'one') {
-       steps{
+     stage('one') {
+       steps {
          sh 'echo one'
        }
      }
 
 
-     stage( 'one') {
-           steps{
+     stage('two') {
+           steps {
              sh 'echo two'
            }
      }
