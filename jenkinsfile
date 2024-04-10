@@ -16,7 +16,6 @@ pipeline{
          sh 'echo one'
          sh 'echo ${SAMPLE_URL}'
          sh 'echo $SSH'
-
        }
      }
 
