@@ -8,6 +8,10 @@ pipeline{
      SSH = credentials("5ca7768e-2824-4239-b210-e73ed240b2ba")
      }
 
+     options {
+             ansiColor('xterm')
+         }
+
    stages {
 
 
