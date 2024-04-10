@@ -15,7 +15,7 @@ pipeline{
        steps {
          sh 'echo one'
          sh 'echo ${SAMPLE_URL}'
-         sh 'echo $ssh'
+         sh 'echo $SSH'
        }
      }
 
