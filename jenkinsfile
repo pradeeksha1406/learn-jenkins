@@ -1,13 +1,11 @@
 pipeline{
   agent {
-  node { label 'workstation' }
+    node { label 'workstation' }
   }
 
-  environmemt {
-    SAMPLE_URL = "https://sample.com"
-
+  environment {
+     SAMPLE_URL = "https://sample.com"
   }
-
 
    stages {
 
@@ -29,7 +27,8 @@ pipeline{
      post {
        always {
            echo 'sending mail'
-       }    mail bcc: '', body: 'hello', cc: '', from: '', replyTo: '', subject: 'hello', to: 'pradeep@gmail.com'
+           mail bcc: '', body: 'hello', cc: '', from: '', replyTo: '', subject: 'hello', to: 'pradeep@gmail.com'
+       }
      }
    }
 }
