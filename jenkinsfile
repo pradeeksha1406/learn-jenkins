@@ -28,7 +28,7 @@ pipeline{
     post {
        always {
            echo 'sending mail'
-           mail bcc: '', body: 'hello', cc: '', from: '', replyTo: '', subject: 'hello', to: 'pradeep@gmail.com'
+
        }
     }
 
