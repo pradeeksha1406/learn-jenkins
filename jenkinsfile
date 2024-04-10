@@ -5,7 +5,7 @@ pipeline{
 
   environment {
      SAMPLE_URL = "https://sample.com"
-     SSH = credentials("ssh")
+     SSH = credentials("5ca7768e-2824-4239-b210-e73ed240b2ba")
      }
 
    stages {
