@@ -1,6 +1,13 @@
 pipeline{
   agent {
-  node { label 'workstation' } }
+  node { label 'workstation' }
+  }
+
+  environmemt {
+    SAMPLE_URL = "https://sample.com"
+
+  }
+
 
    stages {
 
